@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔮</text></svg>"
+    />
+
+    <!-- Styles -->
+    <!-- https://tailwindcss.com/docs/installation/play-cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {};
+    </script>
+    <style type="text/tailwindcss"></style>
+    <script src="./countdown.js"></script>
+    <title>La scuola del futuro</title>
+  </head>
+  <body class="bg-rose-200">
+    <div class="w-screen h-screen flex items-center">
+      <div class="grid grid-cols-4 gap-4 text-3xl mx-auto">
+        <div class="flex flex-col">
+          <div id="days" class="border-2 border-black p-4">00</div>
+          <span class="text-center text-xl mt-2">days</span>
+        </div>
+        <div class="flex flex-col">
+          <div id="hours" class="border-2 border-black p-4">00</div>
+          <span class="text-center text-xl mt-2">Hours</span>
+        </div>
+        <div class="flex flex-col">
+          <div id="minutes" class="border-2 border-black p-4">00</div>
+          <span class="text-center text-xl mt-2">Minutes</span>
+        </div>
+        <div class="flex flex-col">
+          <div id="seconds" class="border-2 border-black p-4">00</div>
+          <span class="text-center text-xl mt-2">Second</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
